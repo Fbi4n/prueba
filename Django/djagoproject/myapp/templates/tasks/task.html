@@ -1,0 +1,22 @@
+
+    {% extends "layouts/base.html" %}
+     {% block content %}
+    <h1>ESTAS SON LAS TAREAS ACTIVAS</h1>
+    {% for i in tasks %}
+    <ul>
+      <li>
+        <strong>-ID:</strong> {{i.id}}<br />
+        <strong>-TAREA:</strong> {{i.title}}<br />
+        <strong>-PROYECTO: </strong>{{i.project.name}} 
+        {% if i.done == False %}
+        <p style="color: red;">Tarea Pendiente ⏳</p>
+        {% else %}
+        <p style="color: green;">Tarea Realizada ✅</p>
+        {% endif %}
+      </li>
+
+      <button>🗑️ELIMINAR</button>
+      <button>✅HECHO</button>
+    </ul>
+    {% endfor %}
+       {% endblock content %}

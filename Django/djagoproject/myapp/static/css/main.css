@@ -1,0 +1,48 @@
+body{
+    background: #f8f8f8;
+    color: #750000;
+}
+
+.navbar{
+    background: #750000;
+    padding: 15px 20px;
+}
+
+.navbar ul li a{
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.navbar ul li {
+    list-style: none;
+}
+.navbar ul{
+    display: flex;
+    justify-content: space-between;
+}
+
+.navbar ul li a:hover {
+    color: #b39909;
+    
+}
+
+.container{
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+}
+
+.card{
+    background: #b39909;
+    color: #f8f8f8;
+    padding: 10px;
+    margin-bottom: 2px;
+    text-align: center;
+}
+
+.input{
+    background: #b39909;
+    padding: 10px;
+    text-align: center;
+    display: block;
+}

@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- Metadatos-->
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Portfolio Pedro</title>
+    <meta name="description"
+        content="Soy un analista de sistemas apasionado por transformar ideas en soluciones tecnológicas eficientes.">
+    <meta name="robots" content="index, follow">
+    <meta name="theme-color" content="#09f">
+    <!-- Open Graph-->
+    <meta property="og:title" content="Portfolio de un Lic. En Análisis de Sistemas">
+    <meta property="og:description"
+        content="Soy un analista de sistemas apasionado por transformar ideas en soluciones tecnológicas eficientes.">
+    <meta property="og:image:alt" content="Una foto de Tux">
+
+    <!-- Enlaces-->
+    <link rel="icon" type="img" href="images/tux.png">
+    <link rel="alternate" href="https://miweb.devv/es" hreflang="es-PY">
+    <link rel="canonical" href="https://miweb.devv">
+    <link rel="stylesheet" href="css/estilo.css">
+
+
+</head>
+<!--Esto es un Comentario-->
+
+<body>
+    <header>
+        <h1>Portfolio Pedro</h1>
+        <nav>
+            <a class="link" href="#expe">Experiencia</a><!--Enlace interno-->
+            <a class="link" href="#pro">Proyectos</a>
+            <a class="link" href="https://www.google.com/" target="_blank" rel="noreferrer">Internet</a>
+        </nav>
+    </header>
+        <dialog id="dialog">
+            <h1>¿Sabias Que?</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel nam molestiae, error tempora sint labore nesciunt necessitatibus nisi est iure nostrum nulla, tempore modi facilis saepe. Consequuntur praesentium nesciunt dignissimos.</p>
+            <button id="hide">Cerrar Modal</button>
+        </dialog>
+            <button id="show">Ver más Información</button>
+            <script>
+                window.show.addEventListener('click', () => {
+                    window.dialog.showModal()
+                })
+                window.hide.addEventListener('click', () => {
+                    window.dialog.close()
+                })
+            </script>
+
+    <main>
+        <p class="description">
+            Soy un analista de sistemas apasionado por transformar ideas en soluciones tecnológicas eficientes. Me
+            especializo en el análisis, diseño e implementación de sistemas que optimizan procesos y mejoran la toma de
+            decisiones. <strong>Cuento con experiencia en desarrollo web</strong>, gestión de bases de datos y
+            metodologías
+            ágiles, lo que me
+            permite adaptarme rápidamente a distintos entornos y desafíos.
+
+            Me destaco por mi enfoque analítico, atención al detalle y capacidad para resolver problemas complejos.
+            <em>Disfruto
+                trabajar en equipo</em>, colaborar en proyectos innovadores y mantenerme en constante aprendizaje dentro
+            del
+            mundo
+            tecnológico.
+        </p><br>
+        <h2 id="#expe">Experiencia</h2>
+        <ul>
+            <li>EuroWood</li>
+            <li>Digital C9</li>
+            <li>UTIC</li>
+        </ul>
+        <img src="images/tux.png" alt="tux" width="500px" height="500px"><br>
+
+        <h3 id="#pro">Proyectos Realizados</h3>
+
+        <aside>
+            <header>
+                <h3>Mis tecnologías favoritas</h3>
+            </header>
+            <ol type="1" start="1">
+                <li>PHP</li>
+                <li>Python</li>
+                <li>JavaScript</li>
+                <li>Node.js</li>
+            </ol>
+        </aside>
+
+        <section>
+            <article>
+                <header>
+                    <h4>Sitios Web Corporativo</h4>
+                </header>
+                <p>
+                    Desarrollo de un sitio web con una interfaz amigable y moderna.
+                </p>
+                <div>Tecnologías Utilizadas: HTML, CSS, JAVASCRIPT</div>
+            </article>
+        </section>
+        <section>
+            <h2>Preguntas frecuentes</h2>
+            <details open>
+                <summary>¿Que estudios tienes?</summary>
+                <p>
+                    Estudie en la Universidad Tecnologica Intercontinental en la Facultad de Informática
+                </p>
+            </details>
+            <details>
+                <summary>¿Cuales son tus Hobbies?</summary>
+                <p>
+                    Me gusta la música
+                </p>
+            </details>
+            <details>
+                <summary>¿Cuales son tus Lenguajes Favoritos?</summary>
+                <p>
+                    Me gusta la música
+                </p>
+            </details>
+        </section><br>
+        <section>
+            <form method="post" action="">
+                <fieldset>
+                    <legend>Informacion Personal</legend>
+                    <div>
+                        <label>Nombre:
+                            <input type="text" name="name" id="name" placeholder="Ingrese su Nombre" required>
+                        </label>
+                    </div>
+                    <div>
+                        <label>Email:
+                            <input type="email" name="mail" id="mail" placeholder="Ingrese su Correo" required>
+                        </label>
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <legend>Información Adicional</legend>
+                    <div>
+                        <label>Teléfono:
+                            <input type="tel" name="telef" id="telef" placeholder="Ingrese su Telefono" required>
+                        </label>
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <legend>Otros</legend>
+                    <div>
+                        <label>¿Por qué quieres contactar?<br>
+                            <select name="motivo" id="motivo">
+                                <option value="1">Trabajo</option>
+                                <option value="2">Duda</option>
+                                <option value="3">Más Información</option>
+                            </select>
+                        </label>
+                        <div>
+                            <label>¿Aceptas los términos?
+                                <input type="checkbox" name="terminos" id="terminos" required>
+                            </label>
+                        </div>
+                    </div>
+                </fieldset>
+                <div>
+                    <datalist id="languages">
+                        <option value="JavaScript"></option>
+                        <option value="Python"></option>
+                        <option value="PHP"></option>
+                    </datalist>
+                    <label>
+                        ¿Con cual lenguaje necesitas ayuda?
+                        <input list="languages" name="languages">
+                    </label>
+                </div>
+                <input type="submit" value="Enviar Contacto">
+            </form>
+        </section>
+
+    </main>
+    <footer>Copyright - 2026 <br>
+        <a class="link" href="mailto:prueba@prueba.gmail.com">Enviame un correo</a><br>
+        <a class="link" href="tel:+5959010101010101">Puedes llamarme</a>
+
+
+    </footer>
+
+</body>
+
+</html>

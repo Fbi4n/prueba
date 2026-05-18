@@ -1,0 +1,122 @@
+/* --- Variables para fácil personalización --- */
+:root {
+    --primary-color: #09f;
+    --dark-text: #2c3e50;
+    --light-text: #7f8c8d;
+    --bg-color: #f4f7f6;
+    --white: #ffffff;
+    --shadow: 0 10px 20px rgba(0,0,0,0.05);
+}
+
+/* --- Estilos por ID (Elementos únicos) --- */
+#main-content {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+#dialog {
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 0 50px rgba(0,0,0,0.2);
+    padding: 30px;
+    width: 90%;
+    max-width: 500px;
+}
+
+#show {
+    display: block;
+    margin: 20px auto;
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 50px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: transform 0.2s;
+}
+
+#show:hover {
+    transform: scale(1.05);
+}
+
+/* --- Estilos por Clase (Elementos repetibles) --- */
+.link {
+    text-decoration: none;
+    color: var(--primary-color);
+    font-weight: 600;
+    transition: all 0.3s;
+}
+
+.link:hover {
+    text-decoration: underline;
+    opacity: 0.8;
+}
+
+.description {
+    font-size: 1.2rem;
+    color: var(--dark-text);
+    background-color: var(--white);
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: var(--shadow);
+    border-left: 6px solid var(--primary-color);
+}
+
+/* Clase genérica para secciones tipo "tarjeta" */
+.card {
+    background: var(--white);
+    margin: 20px 0;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: var(--shadow);
+}
+
+/* --- Estilos Generales Reutilizables --- */
+body {
+    font-family: 'Segoe UI', Roboto, sans-serif;
+    background-color: var(--bg-color);
+    color: var(--dark-text);
+    line-height: 1.8;
+}
+
+h1, h2, h3 {
+    color: #1a1a1a;
+    letter-spacing: -0.5px;
+}
+
+/* Estilo para los formularios */
+fieldset {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 15px;
+}
+
+legend {
+    font-weight: bold;
+    color: var(--primary-color);
+    padding: 0 10px;
+}
+
+/* Imagen de Tux elegante */
+img {
+    border-radius: 20px;
+    box-shadow: 0 15px 35px rgba(0,0,0,0.1);
+    filter: grayscale(20%);
+    transition: filter 0.5s;
+    margin-left: 25%;
+}
+
+img:hover {
+    filter: grayscale(0%);
+
+}
+
+footer {
+    text-align: center;
+    padding: 50px 0;
+    font-size: 0.9rem;
+    color: var(--light-text);
+}
